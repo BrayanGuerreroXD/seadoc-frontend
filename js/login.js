@@ -189,7 +189,10 @@ function cargarModuloRol() {
   // Si es admin o docente redirecciona a su modulo
   window.location.href = esAdmin == true ? './administrador/index.html' : './docente/index.html'
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> e5a276d960240bd16fcbbe1e9ec87966f7043835
 function parseJwt(token) {
   var base64Url = token.split('.')[1];
   var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
@@ -198,4 +201,9 @@ function parseJwt(token) {
   }).join(''));
 
   return JSON.parse(jsonPayload);
+<<<<<<< HEAD
 }
+
+=======
+}
+>>>>>>> e5a276d960240bd16fcbbe1e9ec87966f7043835
